@@ -41,7 +41,7 @@ const Certifications = () => {
       issuer: 'ISRO/IIRS',
       date: '2024',
       credentialId: 'RxAIpQNALW',
-      description: 'Proficient in developing scalable applications on Google Cloud',
+      description: 'Certified in AIML for Geodata Analysis by ISRO, specializing in AI/ML applications for geospatial data and remote sensing',
       verifyUrl: 'https://isrolms.iirs.gov.in/mod/customcert/verify_certificate.php?code=RxAIpQNALW&qrcode=1',
       color: 'from-blue-500 to-cyan-500',
     },
