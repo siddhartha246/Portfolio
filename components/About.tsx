@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { Code, BarChart3, Server, Brain } from 'lucide-react';
 
-import { BookOpen, School, MapPin } from 'lucide-react';
+import { BookOpen, School, MapPin, Calendar } from 'lucide-react';
 
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
