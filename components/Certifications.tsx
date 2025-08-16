@@ -51,7 +51,7 @@ const Certifications = () => {
       date: '2023',
       credentialId: 'AZ-900-2023-789',
       description: 'Foundation knowledge of cloud services and Azure platform',
-      verifyUrl: 'https://docs.microsoft.com/certifications',
+      verifyUrl: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_NPwQai6r4H33jtCA4_1755377728310_completion_certificate.pdf',
       color: 'from-blue-600 to-indigo-600',
     },
     {
