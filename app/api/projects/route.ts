@@ -3,13 +3,12 @@ import { NextResponse } from 'next/server';
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
+    title: 'Settle-up',
+    description: 'Expense tracking app that record, split, and settle shared expenses with automated debt calculations and minimized transactions.',
     image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    technologies: ['React', 'Node.js', 'MongoDB'],
     category: 'fullstack',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    github: 'https://github.com/siddhartha246/SettleUp.git',
   },
   {
     id: 2,
