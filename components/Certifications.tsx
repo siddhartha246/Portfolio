@@ -134,29 +134,6 @@ const Certifications = () => {
           ))}
         </div>
 
-        {/* Stats section */}
-        <div className="mt-16 reveal">
-          <div className="glass-card p-8 text-center">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div>
-                <div className="text-3xl font-bold text-accent mb-2">4</div>
-                <div className="text-gray-300">Active Certifications</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-secondary mb-2">3</div>
-                <div className="text-gray-300">Cloud Platforms</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent mb-2">100%</div>
-                <div className="text-gray-300">Pass Rate</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-secondary mb-2">2024</div>
-                <div className="text-gray-300">Latest Certification</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

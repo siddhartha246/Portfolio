@@ -3,6 +3,8 @@
 import { useEffect, useRef } from 'react';
 import { Code, Palette, Server, Smartphone } from 'lucide-react';
 
+import { GraduationCap, Building2, Calendar } from 'lucide-react';
+
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -77,7 +79,7 @@ const About = () => {
                 turning complex problems into simple, beautiful designs.
               </p>
               <p className="text-gray-300">
-                My background in Electronics and Computer Engineering gives me a unique
+                Currently pursuing Electronics and Computer Engineering, which gives me a unique
                 perspective on both hardware and software development, allowing me to
                 create comprehensive solutions.
               </p>
@@ -87,22 +89,31 @@ const About = () => {
           <div className="reveal">
             <div className="glass-card p-8 card-3d">
               <h3 className="text-2xl font-bold text-white mb-4">Education</h3>
-              <div className="text-center mb-6">
-                <div className="text-4xl font-bold text-accent mb-2">2024</div>
-                <div className="text-white text-lg">Graduate</div>
-              </div>
               <div className="space-y-4">
                 <div>
-                  <h4 className="text-white font-semibold">Degree</h4>
+                  <div className="flex items-center space-x-3 mb-2">
+                    <GraduationCap className="text-accent" size={20} />
+                    <h4 className="text-white font-semibold">Degree</h4>
+                  </div>
                   <p className="text-gray-300">Bachelor of Engineering (BE)</p>
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold">Stream</h4>
+                  <div className="flex items-center space-x-3 mb-2">
+                    <GraduationCap className="text-accent" size={20} />
+                    <h4 className="text-white font-semibold">Stream</h4>
+                  </div>
                   <p className="text-gray-300">Electronics and Computer Engineering</p>
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold">University</h4>
+                  <div className="flex items-center space-x-3 mb-2">
+                    <Building2 className="text-accent" size={20} />
+                    <h4 className="text-white font-semibold">University</h4>
+                  </div>
                   <p className="text-gray-300">Thapar University of Engineering and Technology</p>
+                  <div className="flex items-center space-x-2 mt-2">
+                    <Calendar className="text-gray-400" size={16} />
+                    <span className="text-gray-400 text-sm">2022 - 2026</span>
+                  </div>
                 </div>
               </div>
             </div>
