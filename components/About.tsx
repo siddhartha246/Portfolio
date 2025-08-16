@@ -71,24 +71,26 @@ const About = () => {
             <div className="glass-card p-8 card-3d">
               <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
               <p className="text-gray-300 mb-6">
-                Started as a curious developer exploring the web, now I specialize
-                in building scalable applications with modern technologies. I love
+                Fresh graduate from Thapar University with a passion for technology
+                and innovation. I specialize in building scalable applications with 
+                modern technologies and love
                 turning complex problems into simple, beautiful designs.
               </p>
               <p className="text-gray-300">
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open source, or mentoring other developers.
+                My background in Electronics and Computer Engineering gives me a unique
+                perspective on both hardware and software development, allowing me to
+                create comprehensive solutions.
               </p>
             </div>
           </div>
 
           <div className="reveal">
             <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-r from-accent to-secondary rounded-full animate-pulse3d opacity-20"></div>
+              <div className="w-80 h-80 mx-auto bg-gradient-to-r from-accent to-accent-secondary rounded-full animate-pulse3d opacity-20"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="glass-card p-8 text-center">
-                  <div className="text-4xl font-bold text-accent">5+</div>
-                  <div className="text-white">Years Experience</div>
+                  <div className="text-4xl font-bold text-accent">2024</div>
+                  <div className="text-white">Graduate</div>
                 </div>
               </div>
             </div>
@@ -110,7 +112,7 @@ const About = () => {
               
               <div className="w-full bg-gray-700 rounded-full h-2">
                 <div
-                  className="bg-gradient-to-r from-accent to-secondary h-2 rounded-full transition-all duration-1000"
+                  className="bg-gradient-to-r from-accent to-accent-secondary h-2 rounded-full transition-all duration-1000"
                   style={{ width: `${skill.progress}%` }}
                 ></div>
               </div>

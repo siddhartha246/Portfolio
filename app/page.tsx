@@ -3,17 +3,21 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Education from '@/components/Education';
 import Certifications from '@/components/Certifications';
 import Portfolio from '@/components/Portfolio';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import ThemeToggle from '@/components/ThemeToggle';
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
+      <ThemeToggle />
       <Navbar />
       <Hero />
       <About />
+      <Education />
       <Certifications />
       <Portfolio />
       <Contact />
