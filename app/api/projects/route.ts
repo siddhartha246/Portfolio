@@ -36,8 +36,8 @@ const projects = [
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
     technologies: ['Tableau'],
     category: 'data visualization',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    github: 'https://github.com/siddhartha246/Stock-dashboard.git',
+   
   },
   {
     id: 5,
