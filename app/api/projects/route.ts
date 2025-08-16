@@ -32,7 +32,7 @@ const projects = [
   {
     id: 4,
     title: 'Stock Dashboard',
-    description: 'Analytics dashboard with AI-powered insights and data visualization for business intelligence.',
+    description: 'Analytics dashboard for stock performance.',
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
     technologies: ['Tableau'],
     category: 'data visualization',
