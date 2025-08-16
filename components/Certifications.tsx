@@ -46,8 +46,8 @@ const Certifications = () => {
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      title: 'Microsoft Azure Fundamentals',
-      issuer: 'Microsoft',
+      title: 'Data Science Job Simulation',
+      issuer: 'BCGX',
       date: '2023',
       credentialId: 'AZ-900-2023-789',
       description: 'Foundation knowledge of cloud services and Azure platform',
