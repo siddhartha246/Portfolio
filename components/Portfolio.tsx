@@ -21,7 +21,7 @@ const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [loading, setLoading] = useState(true);
 
-  const categories = ['all', 'web', 'mobile', 'fullstack'];
+  const categories = ['all', 'AI/ML', 'Data-visualization', 'fullstack'];
 
   useEffect(() => {
     fetchProjects();
