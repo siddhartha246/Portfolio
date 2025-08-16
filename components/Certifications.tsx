@@ -28,12 +28,12 @@ const Certifications = () => {
 
   const certifications = [
     {
-      title: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
+      title: 'Full-stack Web Development Bootcamp',
+      issuer: 'Udemy',
       date: '2024',
       credentialId: 'AWS-SAA-2024-001',
       description: 'Expertise in designing distributed systems on AWS cloud platform',
-      verifyUrl: 'https://aws.amazon.com/verification',
+      verifyUrl: 'https://www.udemy.com/certificate/UC-c6e69934-cc7d-4e1f-91ec-613e01121ab0/',
       color: 'from-orange-500 to-yellow-500',
     },
     {
