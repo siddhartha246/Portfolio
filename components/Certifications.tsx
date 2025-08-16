@@ -32,7 +32,7 @@ const Certifications = () => {
       issuer: 'Udemy',
       date: '2025',
       credentialId: 'UC-c6e69934-cc7d-4e1f-91ec-613e0112Iab0',
-      description: 'Expertise in designing distributed systems on AWS cloud platform',
+      description: 'Skilled in building complete web applications from front-end to back-end with database integration and deployment',
       verifyUrl: 'https://www.udemy.com/certificate/UC-c6e69934-cc7d-4e1f-91ec-613e01121ab0/',
       color: 'from-orange-500 to-yellow-500',
     },
