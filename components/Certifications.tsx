@@ -55,12 +55,12 @@ const Certifications = () => {
       color: 'from-blue-600 to-indigo-600',
     },
     {
-      title: 'Certified Kubernetes Administrator',
-      issuer: 'Cloud Native Computing Foundation',
-      date: '2024',
-      credentialId: 'CKA-2024-123',
-      description: 'Advanced skills in Kubernetes cluster administration',
-      verifyUrl: 'https://www.cncf.io/certification',
+      title: 'Data Analytics Job Simulation',
+      issuer: 'Deloitte',
+      date: '2025',
+      credentialId: 'JvTPhrXbZuqPZ6XnF',
+      description: 'Completed a Deloitte job simulation involving data analysis and forensic technology, also created a data dashboard using Tableau',
+      verifyUrl: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_NPwQai6r4H33jtCA4_1755378967771_completion_certificate.pdf',
       color: 'from-purple-500 to-pink-500',
     },
   ];
