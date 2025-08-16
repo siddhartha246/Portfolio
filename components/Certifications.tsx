@@ -50,7 +50,7 @@ const Certifications = () => {
       issuer: 'BCGX',
       date: '2025',
       credentialId: 'HbZyHq9DsBRg2C76G',
-      description: 'Foundation knowledge of cloud services and Azure platform',
+      description: 'Demonstrated advanced data analytics skills by identifying essential client data and outlining a strategic investigation approach',
       verifyUrl: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_NPwQai6r4H33jtCA4_1755377728310_completion_certificate.pdf',
       color: 'from-blue-600 to-indigo-600',
     },
