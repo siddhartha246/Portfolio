@@ -19,17 +19,9 @@ const projects = [
     category: 'AI/ML',
     github: 'https://github.com/siddhartha246/Employee-Attrition-Prediction.git',
   },
+ 
   {
     id: 3,
-    title: 'Mobile Banking App',
-    description: 'Secure mobile banking application with biometric authentication and real-time transactions.',
-    image: 'https://images.pexels.com/photos/4968636/pexels-photo-4968636.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['React Native', 'Firebase', 'Redux', 'Expo'],
-    category: 'mobile',
-    github: 'https://github.com',
-  },
-  {
-    id: 4,
     title: 'Stock Dashboard',
     description: 'Analytics dashboard for stock performance.',
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -38,25 +30,7 @@ const projects = [
     github: 'https://github.com/siddhartha246/Stock-dashboard.git',
    
   },
-  {
-    id: 5,
-    title: 'Social Media App',
-    description: 'Social networking platform with real-time messaging, content sharing, and community features.',
-    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['Flutter', 'GraphQL', 'PostgreSQL', 'WebRTC'],
-    category: 'mobile',
-    github: 'https://github.com',
-  },
-  {
-    id: 6,
-    title: 'Learning Management System',
-    description: 'Comprehensive LMS with course creation, progress tracking, and interactive learning modules.',
-    image: 'https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['Angular', 'NestJS', 'MySQL', 'WebRTC'],
-    category: 'fullstack',
-    github: 'https://github.com',
-    live: 'https://example.com',
-  },
+ 
 ];
 
 export async function GET() {
