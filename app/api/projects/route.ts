@@ -12,13 +12,12 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'Collaborative task management application with real-time updates and team collaboration features.',
+    title: 'Employee Attrition Prediction ',
+    description: 'Built a churn prediction model to identify employees likely to leave a bank using historical data. Applied machine learning techniques with TensorFlow for effective classification and retention insights.',
     image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind'],
-    category: 'web',
-    github: 'https://github.com',
-    live: 'https://example.com',
+    technologies: ['Python,Tensorflow,Scikit-learn'],
+    category: 'AI/ML',
+    github: 'https://github.com/siddhartha246/Employee-Attrition-Prediction.git',
   },
   {
     id: 3,
