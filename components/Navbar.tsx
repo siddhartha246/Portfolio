@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Briefcase, Mail } from 'lucide-react';
+import { Menu, X, Home, User, Briefcase, Mail, Award } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +18,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home', icon: Home },
     { name: 'About', href: '#about', icon: User },
+    { name: 'Certifications', href: '#certifications', icon: Award },
     { name: 'Portfolio', href: '#portfolio', icon: Briefcase },
     { name: 'Contact', href: '#contact', icon: Mail },
   ];
