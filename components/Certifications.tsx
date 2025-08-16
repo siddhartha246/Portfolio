@@ -48,8 +48,8 @@ const Certifications = () => {
     {
       title: 'Data Science Job Simulation',
       issuer: 'BCGX',
-      date: '2023',
-      credentialId: 'AZ-900-2023-789',
+      date: '2025',
+      credentialId: 'HbZyHq9DsBRg2C76G',
       description: 'Foundation knowledge of cloud services and Azure platform',
       verifyUrl: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/Tcz8gTtprzAS4xSoK_SKZxezskWgmFjRvj9_NPwQai6r4H33jtCA4_1755377728310_completion_certificate.pdf',
       color: 'from-blue-600 to-indigo-600',
