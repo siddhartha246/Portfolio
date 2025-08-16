@@ -13,11 +13,9 @@ import ThemeToggle from '@/components/ThemeToggle';
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
-      <ThemeToggle />
       <Navbar />
       <Hero />
       <About />
-      <Education />
       <Certifications />
       <Portfolio />
       <Contact />

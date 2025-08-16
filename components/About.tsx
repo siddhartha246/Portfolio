@@ -47,8 +47,8 @@ const About = () => {
     },
     {
       icon: Smartphone,
-      title: 'Mobile Development',
-      description: 'React Native, Flutter, PWA',
+      title: 'AI/ML Development',
+      description: 'Python, TensorFlow, PyTorch, Scikit-learn',
       progress: 75,
     },
   ];
@@ -85,12 +85,24 @@ const About = () => {
           </div>
 
           <div className="reveal">
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-r from-accent to-accent-secondary rounded-full animate-pulse3d opacity-20"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="glass-card p-8 text-center">
-                  <div className="text-4xl font-bold text-accent">2024</div>
-                  <div className="text-white">Graduate</div>
+            <div className="glass-card p-8 card-3d">
+              <h3 className="text-2xl font-bold text-white mb-4">Education</h3>
+              <div className="text-center mb-6">
+                <div className="text-4xl font-bold text-accent mb-2">2024</div>
+                <div className="text-white text-lg">Graduate</div>
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-white font-semibold">Degree</h4>
+                  <p className="text-gray-300">Bachelor of Engineering (BE)</p>
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold">Stream</h4>
+                  <p className="text-gray-300">Electronics and Computer Engineering</p>
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold">University</h4>
+                  <p className="text-gray-300">Thapar University of Engineering and Technology</p>
                 </div>
               </div>
             </div>

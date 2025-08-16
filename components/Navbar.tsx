@@ -18,7 +18,6 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home', icon: Home },
     { name: 'About', href: '#about', icon: User },
-    { name: 'Education', href: '#education', icon: BookOpen },
     { name: 'Certifications', href: '#certifications', icon: Award },
     { name: 'Portfolio', href: '#portfolio', icon: Briefcase },
     { name: 'Contact', href: '#contact', icon: Mail },
