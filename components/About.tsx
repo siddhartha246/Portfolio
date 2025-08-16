@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { Code, Palette, Server, Smartphone } from 'lucide-react';
+import { Code, BarChart3, Server, Brain } from 'lucide-react';
 
-import { GraduationCap, Building2, Calendar } from 'lucide-react';
+import { BookOpen, School, MapPin } from 'lucide-react';
 
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -42,13 +42,13 @@ const About = () => {
       progress: 85,
     },
     {
-      icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Figma, Adobe XD, Responsive Design',
-      progress: 80,
+      icon: BarChart3,
+      title: 'Data Visualization',
+      description: 'SQL, Tableau, Power BI',
+      progress: 85,
     },
     {
-      icon: Smartphone,
+      icon: Brain,
       title: 'AI/ML Development',
       description: 'Python, TensorFlow, PyTorch, Scikit-learn',
       progress: 75,
@@ -92,21 +92,21 @@ const About = () => {
               <div className="space-y-4">
                 <div>
                   <div className="flex items-center space-x-3 mb-2">
-                    <GraduationCap className="text-accent" size={20} />
+                    <BookOpen className="text-accent" size={20} />
                     <h4 className="text-white font-semibold">Degree</h4>
                   </div>
                   <p className="text-gray-300">Bachelor of Engineering (BE)</p>
                 </div>
                 <div>
                   <div className="flex items-center space-x-3 mb-2">
-                    <GraduationCap className="text-accent" size={20} />
+                    <School className="text-accent" size={20} />
                     <h4 className="text-white font-semibold">Stream</h4>
                   </div>
                   <p className="text-gray-300">Electronics and Computer Engineering</p>
                 </div>
                 <div>
                   <div className="flex items-center space-x-3 mb-2">
-                    <Building2 className="text-accent" size={20} />
+                    <MapPin className="text-accent" size={20} />
                     <h4 className="text-white font-semibold">University</h4>
                   </div>
                   <p className="text-gray-300">Thapar University of Engineering and Technology</p>

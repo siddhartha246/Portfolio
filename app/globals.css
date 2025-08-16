@@ -3,27 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --primary: #0a0a0f;
-  --secondary: #1a1a2e;
+  --primary: #0f172a;
+  --secondary: #1e293b;
   --accent: #3b82f6;
   --accent-secondary: #8b5cf6;
   --text-light: #f8fafc;
   --text-dark: #1e293b;
-  --glass-bg: rgba(15, 23, 42, 0.3);
+  --glass-bg: rgba(30, 41, 59, 0.3);
   --glass-border: rgba(59, 130, 246, 0.2);
-  --card-bg: rgba(15, 23, 42, 0.5);
+  --card-bg: rgba(30, 41, 59, 0.5);
 }
 
 [data-theme="light"] {
-  --primary: #f8fafc;
-  --secondary: #e2e8f0;
+  --primary: #1e293b;
+  --secondary: #334155;
   --accent: #3b82f6;
   --accent-secondary: #8b5cf6;
-  --text-light: #1e293b;
+  --text-light: #f8fafc;
   --text-dark: #f8fafc;
-  --glass-bg: rgba(248, 250, 252, 0.8);
+  --glass-bg: rgba(51, 65, 85, 0.3);
   --glass-border: rgba(59, 130, 246, 0.3);
-  --card-bg: rgba(248, 250, 252, 0.9);
+  --card-bg: rgba(51, 65, 85, 0.5);
 }
 
 * {
@@ -38,14 +38,14 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, var(--primary) 0%, #1e293b 25%, #0f172a 50%, #1e293b 75%, var(--primary) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 25%, var(--primary) 50%, var(--secondary) 75%, var(--primary) 100%);
   min-height: 100vh;
   overflow-x: hidden;
   transition: all 0.3s ease;
 }
 
 [data-theme="light"] body {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 25%, #cbd5e1 50%, #e2e8f0 75%, #f8fafc 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 25%, var(--primary) 50%, var(--secondary) 75%, var(--primary) 100%);
 }
 
 /* 3D Animations */
