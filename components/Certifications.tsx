@@ -37,12 +37,12 @@ const Certifications = () => {
       color: 'from-orange-500 to-yellow-500',
     },
     {
-      title: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      date: '2023',
+      title: 'AI/ML for geodata analysis',
+      issuer: 'ISRO/IIRS',
+      date: '2024',
       credentialId: 'GCP-PD-2023-456',
       description: 'Proficient in developing scalable applications on Google Cloud',
-      verifyUrl: 'https://cloud.google.com/certification',
+      verifyUrl: 'https://isrolms.iirs.gov.in/mod/customcert/verify_certificate.php?code=RxAIpQNALW&qrcode=1',
       color: 'from-blue-500 to-cyan-500',
     },
     {
