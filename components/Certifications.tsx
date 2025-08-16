@@ -30,8 +30,8 @@ const Certifications = () => {
     {
       title: 'Full-stack Web Development Bootcamp',
       issuer: 'Udemy',
-      date: '2024',
-      credentialId: 'AWS-SAA-2024-001',
+      date: '2025',
+      credentialId: 'UC-c6e69934-cc7d-4e1f-91ec-613e0112Iab0',
       description: 'Expertise in designing distributed systems on AWS cloud platform',
       verifyUrl: 'https://www.udemy.com/certificate/UC-c6e69934-cc7d-4e1f-91ec-613e01121ab0/',
       color: 'from-orange-500 to-yellow-500',
