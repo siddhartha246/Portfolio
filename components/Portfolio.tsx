@@ -47,24 +47,6 @@ const Portfolio = () => {
       category: 'Data-visualization',
       github: 'https://github.com/siddhartha246/Stock-dashboard.git',
     },
-    {
-      id: 4,
-      title: 'E-commerce Platform',
-      description: 'Full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'TypeScript', 'Stripe'],
-      category: 'fullstack',
-      github: 'https://github.com',
-    },
-    {
-      id: 5,
-      title: 'Image Classification Model',
-      description: 'Deep learning model for image classification using convolutional neural networks with high accuracy.',
-      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Python', 'PyTorch', 'OpenCV'],
-      category: 'AI/ML',
-      github: 'https://github.com',
-    },
   ];
 
   const categories = ['all', 'AI/ML', 'Data-visualization', 'fullstack'];
