@@ -3,7 +3,6 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Education from '@/components/Education';
 import Certifications from '@/components/Certifications';
 import Portfolio from '@/components/Portfolio';
 import Contact from '@/components/Contact';
