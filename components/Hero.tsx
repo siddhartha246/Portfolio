@@ -103,13 +103,13 @@ const Hero = () => {
 
         <div className="animate-slide-up flex justify-center space-x-6">
           <a
-            href="https://github.com"
+            href="https://github.com/siddhartha246"
             className="glass-card p-4 text-white hover:text-accent transition-all duration-300 card-3d"
           >
             <Github size={24} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/siddhartha-jaiswal-968233322/"
             className="glass-card p-4 text-white hover:text-accent transition-all duration-300 card-3d"
           >
             <Linkedin size={24} />
