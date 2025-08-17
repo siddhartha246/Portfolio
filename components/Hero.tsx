@@ -86,7 +86,7 @@ const Hero = () => {
             Get In Touch
           </a>
           <a
-            href="/api/resume"
+            href="https://drive.google.com/file/d/1iGxVPB29icPqw-9WY73u-PYZw2IrlD_u/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="glass-card px-8 py-4 text-white hover:bg-secondary hover:text-white transition-all duration-300 card-3d"
@@ -94,7 +94,7 @@ const Hero = () => {
             View Resume
           </a>
           <a
-            href="https://drive.google.com/file/d/1iGxVPB29icPqw-9WY73u-PYZw2IrlD_u/view?usp=sharing"
+            href="#portfolio"
             className="glass-card px-8 py-4 text-white hover:bg-secondary hover:text-white transition-all duration-300 card-3d"
           >
             View Work
