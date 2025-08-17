@@ -65,15 +65,6 @@ const Portfolio = () => {
       category: 'AI/ML',
       github: 'https://github.com',
     },
-    {
-      id: 6,
-      title: 'Sales Analytics Dashboard',
-      description: 'Interactive dashboard for sales performance analysis with dynamic filtering and reporting features.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Power BI', 'SQL', 'Excel'],
-      category: 'Data-visualization',
-      github: 'https://github.com',
-    },
   ];
 
   const categories = ['all', 'AI/ML', 'Data-visualization', 'fullstack'];
