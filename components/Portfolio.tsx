@@ -20,6 +20,7 @@ const Portfolio = () => {
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [activeFilter, setActiveFilter] = useState('all');
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   const categories = ['all', 'AI/ML', 'Data-visualization', 'fullstack'];
 
@@ -49,13 +50,27 @@ const Portfolio = () => {
 
   const fetchProjects = async () => {
     try {
+      setLoading(true);
+      setError(null);
       const response = await fetch('/api/projects');
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch projects');
+      }
+      
       const data = await response.json();
       setProjects(data);
-      setFilteredProjects(data);
-      setLoading(false);
+      
+      // Apply current filter to new data
+      if (activeFilter === 'all') {
+        setFilteredProjects(data);
+      } else {
+        setFilteredProjects(data.filter((project: Project) => project.category === activeFilter));
+      }
     } catch (error) {
       console.error('Error fetching projects:', error);
+      setError('Failed to load projects. Please try again.');
+    } finally {
       setLoading(false);
     }
   };
@@ -109,6 +124,24 @@ const Portfolio = () => {
                 <div className="bg-gray-600 h-4 rounded"></div>
               </div>
             ))}
+          </div>
+        ) : error ? (
+          <div className="text-center py-12">
+            <div className="glass-card p-8 max-w-md mx-auto">
+              <p className="text-red-400 mb-4">{error}</p>
+              <button
+                onClick={fetchProjects}
+                className="bg-accent hover:bg-accent/80 text-white px-6 py-2 rounded-lg transition-colors"
+              >
+                Try Again
+              </button>
+            </div>
+          </div>
+        ) : filteredProjects.length === 0 ? (
+          <div className="text-center py-12">
+            <div className="glass-card p-8 max-w-md mx-auto">
+              <p className="text-gray-400">No projects found for the selected category.</p>
+            </div>
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

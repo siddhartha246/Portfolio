@@ -86,7 +86,7 @@ const Hero = () => {
             Get In Touch
           </a>
           <a
-            href="/resume.pdf"
+            href="/api/resume"
             target="_blank"
             rel="noopener noreferrer"
             className="glass-card px-8 py-4 text-white hover:bg-secondary hover:text-white transition-all duration-300 card-3d"
