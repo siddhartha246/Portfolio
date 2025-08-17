@@ -46,21 +46,11 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    // Simulate form submission
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        setSubmitStatus('error');
-      }
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
       setSubmitStatus('error');
     } finally {
@@ -127,7 +117,6 @@ const Contact = () => {
                 </a>
               ))}
             </div>
-
           </div>
 
           {/* Contact Form */}

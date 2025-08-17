@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Github, Filter } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 interface Project {
   id: number;
@@ -16,16 +16,71 @@ interface Project {
 
 const Portfolio = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const [projects, setProjects] = useState<Project[]>([]);
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [activeFilter, setActiveFilter] = useState('all');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+
+  const projects: Project[] = [
+    {
+      id: 1,
+      title: 'Settle-up',
+      description: 'Expense tracking app that record, split, and settle shared expenses with automated debt calculations and minimized transactions.',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React', 'Node.js', 'MongoDB'],
+      category: 'fullstack',
+      github: 'https://github.com/siddhartha246/SettleUp.git',
+    },
+    {
+      id: 2,
+      title: 'Employee Attrition Prediction',
+      description: 'Built a churn prediction model to identify employees likely to leave a bank using historical data. Applied machine learning techniques with TensorFlow for effective classification and retention insights.',
+      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'Tensorflow', 'Scikit-learn'],
+      category: 'AI/ML',
+      github: 'https://github.com/siddhartha246/Employee-Attrition-Prediction.git',
+    },
+    {
+      id: 3,
+      title: 'Stock Dashboard',
+      description: 'Analytics dashboard for stock performance with interactive charts and real-time data visualization.',
+      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Tableau', 'Python', 'SQL'],
+      category: 'Data-visualization',
+      github: 'https://github.com/siddhartha246/Stock-dashboard.git',
+    },
+    {
+      id: 4,
+      title: 'E-commerce Platform',
+      description: 'Full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Next.js', 'TypeScript', 'Stripe'],
+      category: 'fullstack',
+      github: 'https://github.com',
+    },
+    {
+      id: 5,
+      title: 'Image Classification Model',
+      description: 'Deep learning model for image classification using convolutional neural networks with high accuracy.',
+      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'PyTorch', 'OpenCV'],
+      category: 'AI/ML',
+      github: 'https://github.com',
+    },
+    {
+      id: 6,
+      title: 'Sales Analytics Dashboard',
+      description: 'Interactive dashboard for sales performance analysis with dynamic filtering and reporting features.',
+      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Power BI', 'SQL', 'Excel'],
+      category: 'Data-visualization',
+      github: 'https://github.com',
+    },
+  ];
 
   const categories = ['all', 'AI/ML', 'Data-visualization', 'fullstack'];
 
   useEffect(() => {
-    fetchProjects();
+    // Initialize with all projects
+    setFilteredProjects(projects);
   }, []);
 
   useEffect(() => {
@@ -46,34 +101,7 @@ const Portfolio = () => {
     return () => {
       elements?.forEach((el) => observer.unobserve(el));
     };
-  }, [projects]);
-
-  const fetchProjects = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      const response = await fetch('/api/projects');
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch projects');
-      }
-      
-      const data = await response.json();
-      setProjects(data);
-      
-      // Apply current filter to new data
-      if (activeFilter === 'all') {
-        setFilteredProjects(data);
-      } else {
-        setFilteredProjects(data.filter((project: Project) => project.category === activeFilter));
-      }
-    } catch (error) {
-      console.error('Error fetching projects:', error);
-      setError('Failed to load projects. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
+  }, [filteredProjects]);
 
   const filterProjects = (category: string) => {
     setActiveFilter(category);
@@ -115,91 +143,61 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {loading ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="glass-card p-6 animate-pulse">
-                <div className="bg-gray-600 h-48 rounded-lg mb-4"></div>
-                <div className="bg-gray-600 h-6 rounded mb-2"></div>
-                <div className="bg-gray-600 h-4 rounded"></div>
-              </div>
-            ))}
-          </div>
-        ) : error ? (
-          <div className="text-center py-12">
-            <div className="glass-card p-8 max-w-md mx-auto">
-              <p className="text-red-400 mb-4">{error}</p>
-              <button
-                onClick={fetchProjects}
-                className="bg-accent hover:bg-accent/80 text-white px-6 py-2 rounded-lg transition-colors"
-              >
-                Try Again
-              </button>
-            </div>
-          </div>
-        ) : filteredProjects.length === 0 ? (
-          <div className="text-center py-12">
-            <div className="glass-card p-8 max-w-md mx-auto">
-              <p className="text-gray-400">No projects found for the selected category.</p>
-            </div>
-          </div>
-        ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project, index) => (
-              <div
-                key={project.id}
-                className="reveal glass-card overflow-hidden card-3d group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="glass-card p-3 text-white hover:text-accent transition-colors"
-                      >
-                        <Github size={20} />
-                      </a>
-                    )}
-                    {project.live && (
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="glass-card p-3 text-white hover:text-accent transition-colors"
-                      >
-                        <ExternalLink size={20} />
-                      </a>
-                    )}
-                  </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProjects.map((project, index) => (
+            <div
+              key={project.id}
+              className="reveal glass-card overflow-hidden card-3d group"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="glass-card p-3 text-white hover:text-accent transition-colors"
+                    >
+                      <Github size={20} />
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="glass-card p-3 text-white hover:text-accent transition-colors"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
                 </div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+                <p className="text-gray-300 mb-4">{project.description}</p>
                 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                  <p className="text-gray-300 mb-4">{project.description}</p>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="bg-accent/20 text-white px-3 py-1 rounded-full text-sm font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-accent/20 text-white px-3 py-1 rounded-full text-sm font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-        )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
