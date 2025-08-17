@@ -115,7 +115,6 @@ const Hero = () => {
             <Linkedin size={24} />
           </a>
           <a
-            href="mailto:john@example.com"
             href="mailto:siddharthajaiswal166@gmail.com"
             className="glass-card p-4 text-white hover:text-accent transition-all duration-300 card-3d"
           >
