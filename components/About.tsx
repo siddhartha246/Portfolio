@@ -1,7 +1,9 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { Code, Palette, Server, Smartphone } from 'lucide-react';
+import { Code, BarChart3, Server, Brain } from 'lucide-react';
+
+import { BookOpen, School, MapPin, Calendar } from 'lucide-react';
 
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -40,15 +42,15 @@ const About = () => {
       progress: 85,
     },
     {
-      icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Figma, Adobe XD, Responsive Design',
-      progress: 80,
+      icon: BarChart3,
+      title: 'Data Visualization',
+      description: 'SQL, Tableau, Power BI',
+      progress: 85,
     },
     {
-      icon: Smartphone,
-      title: 'Mobile Development',
-      description: 'React Native, Flutter, PWA',
+      icon: Brain,
+      title: 'AI/ML Development',
+      description: 'Python, TensorFlow, PyTorch, Scikit-learn',
       progress: 75,
     },
   ];
@@ -71,24 +73,47 @@ const About = () => {
             <div className="glass-card p-8 card-3d">
               <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
               <p className="text-gray-300 mb-6">
-                Started as a curious developer exploring the web, now I specialize
-                in building scalable applications with modern technologies. I love
+                Fresh graduate from Thapar University with a passion for technology
+                and innovation. I specialize in building scalable applications with 
+                modern technologies and love
                 turning complex problems into simple, beautiful designs.
               </p>
               <p className="text-gray-300">
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open source, or mentoring other developers.
+                Currently pursuing Electronics and Computer Engineering, which gives me a unique
+                perspective on both hardware and software development, allowing me to
+                create comprehensive solutions.
               </p>
             </div>
           </div>
 
           <div className="reveal">
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-r from-accent to-secondary rounded-full animate-pulse3d opacity-20"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="glass-card p-8 text-center">
-                  <div className="text-4xl font-bold text-accent">5+</div>
-                  <div className="text-white">Years Experience</div>
+            <div className="glass-card p-8 card-3d">
+              <h3 className="text-2xl font-bold text-white mb-4">Education</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex items-center space-x-3 mb-2">
+                    <BookOpen className="text-accent" size={20} />
+                    <h4 className="text-white font-semibold">Degree</h4>
+                  </div>
+                  <p className="text-gray-300">Bachelor of Engineering (BE)</p>
+                </div>
+                <div>
+                  <div className="flex items-center space-x-3 mb-2">
+                    <School className="text-accent" size={20} />
+                    <h4 className="text-white font-semibold">Stream</h4>
+                  </div>
+                  <p className="text-gray-300">Electronics and Computer Engineering</p>
+                </div>
+                <div>
+                  <div className="flex items-center space-x-3 mb-2">
+                    <MapPin className="text-accent" size={20} />
+                    <h4 className="text-white font-semibold">University</h4>
+                  </div>
+                  <p className="text-gray-300">Thapar University of Engineering and Technology</p>
+                  <div className="flex items-center space-x-2 mt-2">
+                    <Calendar className="text-gray-400" size={16} />
+                    <span className="text-gray-400 text-sm">2022 - 2026</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,7 +135,7 @@ const About = () => {
               
               <div className="w-full bg-gray-700 rounded-full h-2">
                 <div
-                  className="bg-gradient-to-r from-accent to-secondary h-2 rounded-full transition-all duration-1000"
+                  className="bg-gradient-to-r from-accent to-accent-secondary h-2 rounded-full transition-all duration-1000"
                   style={{ width: `${skill.progress}%` }}
                 ></div>
               </div>

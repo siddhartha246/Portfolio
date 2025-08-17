@@ -21,7 +21,7 @@ const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [loading, setLoading] = useState(true);
 
-  const categories = ['all', 'web', 'mobile', 'fullstack'];
+  const categories = ['all', 'AI/ML', 'Data-visualization', 'fullstack'];
 
   useEffect(() => {
     fetchProjects();
@@ -156,7 +156,7 @@ const Portfolio = () => {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm"
+                        className="bg-accent/20 text-white px-3 py-1 rounded-full text-sm font-medium"
                       >
                         {tech}
                       </span>

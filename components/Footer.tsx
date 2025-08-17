@@ -23,7 +23,7 @@ const Footer = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:john@example.com"
+              href="mailto:siddharthajaiswal166@gmail.com"
               className="glass-card p-4 text-white hover:text-accent transition-all duration-300 card-3d"
             >
               <Mail size={24} />
@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div className="border-t border-white/20 pt-8">
             <p className="text-gray-400 flex items-center justify-center space-x-1">
-              <span>&copy; {currentYear} John Doe. Made with</span>
+              <span>&copy; {currentYear} Siddhartha. Made with</span>
               <Heart className="text-accent animate-pulse" size={16} />
               <span>and lots of coffee.</span>
             </p>

@@ -72,19 +72,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'john@example.com',
-      href: 'mailto:john@example.com',
+      value: 'siddharthajaiswal166@gmail.com',
+      href: 'mailto:siddharthajaiswal166@gmail.com',
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 8340471737',
+      href: 'tel:+918340471737',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Ranchi, Jharkhand',
       href: '#',
     },
   ];
@@ -128,16 +128,6 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* 3D animated element */}
-            <div className="mt-12 relative">
-              <div className="w-64 h-64 bg-gradient-to-r from-accent to-secondary rounded-full opacity-10 animate-pulse3d mx-auto"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-accent mb-2">24/7</div>
-                  <div className="text-white">Available</div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Contact Form */}

@@ -86,6 +86,14 @@ const Hero = () => {
             Get In Touch
           </a>
           <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-card px-8 py-4 text-white hover:bg-secondary hover:text-white transition-all duration-300 card-3d"
+          >
+            View Resume
+          </a>
+          <a
             href="#portfolio"
             className="glass-card px-8 py-4 text-white hover:bg-secondary hover:text-white transition-all duration-300 card-3d"
           >
@@ -108,6 +116,7 @@ const Hero = () => {
           </a>
           <a
             href="mailto:john@example.com"
+            href="mailto:siddharthajaiswal166@gmail.com"
             className="glass-card p-4 text-white hover:text-accent transition-all duration-300 card-3d"
           >
             <Mail size={24} />
