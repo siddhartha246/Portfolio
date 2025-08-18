@@ -55,12 +55,12 @@ const Certifications = () => {
       color: 'from-blue-600 to-indigo-600',
     },
     {
-      title: 'Data Analytics Job Simulation',
-      issuer: 'Deloitte',
+      title: 'Oracle Certified Professional',
+      issuer: 'Oracle',
       date: '2025',
-      credentialId: 'JvTPhrXbZuqPZ6XnF',
-      description: 'Completed a Deloitte job simulation involving data analysis and forensic technology, also created a data dashboard using Tableau',
-      verifyUrl: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_NPwQai6r4H33jtCA4_1755378967771_completion_certificate.pdf',
+      credentialId: '321764604OCI25DSOCP',
+      description: 'Oracle Cloud Infrastructure 2025 Certified Data Science Professional',
+      verifyUrl: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=A3242827C1D7576E2C0E2802FDB67FF588DEE59C28154CC3AF12862083402B8C',
       color: 'from-purple-500 to-pink-500',
     },
   ];
