@@ -49,9 +49,9 @@ const Portfolio = () => {
     },
     {
       id:4,
-      title:'EcoBin-smart waste management system',
-      description:'Built a smart waste management platform that leveraged Gemini AI for waste verification',
-      image:'/EcoBin.png',
+      title:'EcoBin',
+      description:'Smart waste management system-Built a platform that leveraged Gemini AI for waste verification',
+      image:'/Ecobin.png',
       technologies:['React.js, Postgresdb, JavaScript'],
       category:'fullstack',
       live: 'https://eco-bin-delta.vercel.app/report',
