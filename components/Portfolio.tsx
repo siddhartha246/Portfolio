@@ -47,6 +47,16 @@ const Portfolio = () => {
       category: 'Data-visualization',
       github: 'https://github.com/siddhartha246/Stock-dashboard.git',
     },
+    {
+      id:4,
+      title:'EcoBin-smart waste management system',
+      description:'Built a smart waste management platform that leveraged Gemini AI for waste verification',
+      image:'/',
+      technologies:['React.js, Postgresdb, JavaScript'],
+      category:'fullstack',
+      live: 'https://eco-bin-delta.vercel.app/report',
+    },
+    
   ];
 
   const categories = ['all', 'AI/ML', 'Data-visualization', 'fullstack'];
