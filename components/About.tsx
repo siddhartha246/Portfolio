@@ -63,7 +63,7 @@ const About = () => {
             About <span className="text-accent">Me</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            I'm a passionate full-stack developer with 5+ years of experience
+            I'm a passionate full-stack developer with 3+ years of experience
             creating digital solutions that make a difference.
           </p>
         </div>
